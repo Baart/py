@@ -1,3 +1,7 @@
+'''
+File finder with cached database example
+'''
+
 import os
 import sqlite3
 

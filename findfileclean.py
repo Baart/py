@@ -1,23 +1,29 @@
+'''
+Naive File finder example.
+'''
+
 import os
 
 import shutil
 import datetime
 
-where = "J:/"
-what = "test"
+where = "D:/Prog/"
+what = ".py"
 
 try:
     os.listdir(where)
 except:
-    print("cannot list it")
+    print(where, "cannot be listed.")
 
 
-
+'''
+Return list of filename in where that match the name
+'''
 def findfile(where, name):
     #print("findfile on", where)
     results = []
     if(os.path.isfile(where)):
-        raise Exception("cannot find file on a file...")
+        raise Exception("Cannot find file on a file...")
     content = []
     try:
         content = os.listdir(where)
@@ -42,9 +48,8 @@ results = findfile(where, what)
 print("search took:"
       ,(datetime.datetime.now() - beforeSearch))
 
-print("entries:", len(results))
+print("entries:", len(results), "\n")
 
-#for entry in results:
-#    print (entry)
+print ("\n".join(results))
 
 

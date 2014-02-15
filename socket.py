@@ -1,4 +1,6 @@
-# test.py
+'''
+simple socket test example
+'''
 
 
 import socket

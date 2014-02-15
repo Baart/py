@@ -1,5 +1,6 @@
-# renamer.py
-
+'''
+Iterate through a path and replace file name 
+'''
 import os
 import os.path
 
@@ -16,10 +17,6 @@ def mylist(basepath, match, replace):
                 os.rename(fullpath, newpath)
         else:
             print(fullpath, "is nothing")
-
-
-
-
 
 
 
