@@ -1,0 +1,11 @@
+Answer	Count	Percentage
+None	367	29.74%
+CakePHP	75	6.08%
+CherryPy	3	0.24%
+Django	133	10.78%
+Ext GWT	4	0.32%
+Ruby on Rails	164	13.29%
+Struts	23	1.86%
+Zend framework	79	6.40%
+Developed internally	241	19.53%
+Other	199	16.13%
