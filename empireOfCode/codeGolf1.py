@@ -9,8 +9,9 @@ def s1(p):
 #print s1(raw_input())
 
 
-e="cab" #raw_input()
-print sum([(ord(l)-64) for l in e if not l.isupper()]+[(ord(l.lower())-96)*1.5 for l in e if l.isupper()])
+e="Cab" #raw_input()
+e=raw_input()
+print sum([ord(l)-96for l in e if not l.isupper()]+[1.5*ord(l)-96for l in e if l.isupper()])
 
 
 
@@ -23,7 +24,7 @@ def s2(p):
    c+=ord(l)-96
  return c
 #print s(raw_input())
-
+print s2("cab")
 
 
 
