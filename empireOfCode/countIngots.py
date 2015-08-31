@@ -1,12 +1,14 @@
-def count_ingots(report):
 
+# short one
+count_ingots=lambda r: sum([(ord(x[0])-65)*9+int(x[1])for x in r.split(',')])
+
+
+def count_ingots2(report):
     array = report.split(',')
-
     count = 0
     for value in array:
         result = (ord(value[0]) - 65) * 9 + int(value[1])
         count += result
-
     return count
 
 if __name__ == '__main__':
