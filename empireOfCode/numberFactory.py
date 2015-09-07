@@ -5,7 +5,6 @@ def reconstruct(n):
     divider = 0
     arr = []
     for i in range(9,2,-1):
-        print "testing", i
         if n%i == 0:
             divider1 = i
             print "divider1", divider1, n
